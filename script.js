@@ -38,6 +38,13 @@ buttons.forEach((btn) => {
         roundNum.textContent = roundNum_text++;
         humanscore.textContent = humanscore_text;
         computerscore.textContent = computerscore_text;
+        if(announcement_text === "You Win! Paper beats Rock!" || 
+            announcement_text === "You Win! Scissor beats Paper!" || 
+            announcement_text === "You Win! Rock beats Scissor!"){
+                announcement.setAttribute("style","color: green;");
+            }else{
+                announcement.setAttribute("style","color: red;");
+            }
         announcement.textContent = announcement_text;
     });
 });
