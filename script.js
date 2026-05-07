@@ -47,6 +47,12 @@ buttons.forEach((btn) => {
             }
         announcement.textContent = announcement_text;
     });
+    btn.addEventListener("mouseenter", () => {
+        btn.style.backgroundColor = "green";
+    });
+    btn.addEventListener("mouseleave", () => {
+        btn.style.backgroundColor = "";
+    });
 });
 
 
