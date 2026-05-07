@@ -1,0 +1,34 @@
+body{
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 900px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-tab{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.announcement{
+    font-size:larger;
+}
