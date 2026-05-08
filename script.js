@@ -24,7 +24,7 @@ let humanscore_text = 0;
 let computerscore_text = 0;
 let announcement_text = 0;
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll("div.buttons-tab button");
 let humanSelection = 0;
 
 roundNum.textContent = roundNum_text;
@@ -63,6 +63,20 @@ buttons.forEach((btn) => {
     });
 });
 
+const reset = document.querySelector(".reset");
+
+reset.addEventListener("click", () => {
+    roundNum_text = 1;
+    humanscore_text = 0;
+    computerscore_text = 0;
+    announcement_text = "Pick your Weapon";
+    roundNum.textContent = roundNum_text++;
+    humanscore.textContent = humanscore_text;
+    computerscore.textContent = computerscore_text;
+
+    announcement.setAttribute("style","color: black;");
+    announcement.textContent = announcement_text;
+});
 
 function calculateScore(computerSelection, humanSelection) {
     let result = 0;
