@@ -19,6 +19,7 @@ const roundNum = document.querySelector(".round");
 const humanscore = document.querySelector(".human-score");
 const computerscore = document.querySelector(".computer-score");
 const announcement = document.querySelector(".announcement");
+const computer_choice = document.querySelector(".computer-choice");
 let roundNum_text = 1;
 let humanscore_text = 0;
 let computerscore_text = 0;
@@ -38,6 +39,7 @@ buttons.forEach((btn) => {
         roundNum.textContent = roundNum_text++;
         humanscore.textContent = humanscore_text;
         computerscore.textContent = computerscore_text;
+        computer_choice.textContent = "Computer picked " + computerSelection;
         if(announcement_text === "You Win! Paper beats Rock!" || 
             announcement_text === "You Win! Scissor beats Paper!" || 
             announcement_text === "You Win! Rock beats Scissor!"){
@@ -73,8 +75,9 @@ reset.addEventListener("click", () => {
     roundNum.textContent = roundNum_text++;
     humanscore.textContent = humanscore_text;
     computerscore.textContent = computerscore_text;
+    computer_choice.textContent = "";
 
-    announcement.setAttribute("style","color: black;");
+    announcement.removeAttribute("style");
     announcement.textContent = announcement_text;
 });
 

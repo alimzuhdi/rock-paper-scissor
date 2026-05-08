@@ -31,6 +31,10 @@ div.buttons-tab button{
     border-color: grey;
 }
 
+.computer-choice{
+    color: grey;
+}
+
 .announcement{
     font-size:larger;
 }
