@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-    background-color: #f4f4f4;
+    background-color: #F5F5F5;
+    background-image: url(image/kids-game-rock-paper-scissors-pattern-blue-background-134992619.webp);
     font-family: 'Roboto', sans-serif;
 }
 
 .container{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
     margin: 0 auto;
     margin-top: 100px;
     width: 600px;
@@ -14,6 +18,42 @@ body{
     align-items: center;
     padding: 20px;
     gap: 10px;
+}
+
+.score-board{
+    font-family: "Anta", sans-serif;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.score-board span{
+    font-size: 36px;
+    color: white;
+}
+
+.human-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 7px;
+    background-color: #34ADFA;
+}
+
+.computer-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 7px;
+    background-color: #34ADFA;
 }
 
 .buttons-tab{

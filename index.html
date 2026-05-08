@@ -14,9 +14,18 @@
 <body>
     <div class="container">
         <h1 style="font-weight: bold;">Rock Paper Scissor</h1>
-        <p>Round: <span class="round">1</span></p>
-        <p>You: <span class="human-score">0</span></p>
-        <p>Computer: <span class="computer-score">0</span></p>
+        <p style="font-size: 20px;">Round <span class="round">1</span></p>
+        <div class="score-board">
+            <div class="human-board">
+                <p style="color: white; font-weight: bold;">You</p>
+                <span class="human-score">0</span>
+            </div>
+            <p style="align-self: center;">VS</p>
+            <div class="computer-board">
+                <p style="color: white; font-weight: bold;">Computer</p>
+                <span class="computer-score">0</span>
+            </div>
+        </div>
 
         <div class="buttons-tab">
             <button id="Rock">✊</button>
