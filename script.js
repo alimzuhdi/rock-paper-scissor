@@ -44,6 +44,7 @@ buttons.forEach((btn) => {
             announcement_text === "You Win! Scissor beats Paper!" || 
             announcement_text === "You Win! Rock beats Scissor!"){
                 announcement.setAttribute("style","color: green;");
+                confetti();
             }else{
                 announcement.setAttribute("style","color: red;");
             }
