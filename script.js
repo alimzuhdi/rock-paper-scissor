@@ -48,7 +48,15 @@ buttons.forEach((btn) => {
         announcement.textContent = announcement_text;
     });
     btn.addEventListener("mouseenter", () => {
-        btn.style.backgroundColor = "green";
+        if(btn.id === "Rock"){
+            btn.style.backgroundColor = "green";
+        }
+        else if(btn.id === "Paper"){
+            btn.style.backgroundColor = "blue";
+        }
+        else{
+            btn.style.backgroundColor = "red";
+        }
     });
     btn.addEventListener("mouseleave", () => {
         btn.style.backgroundColor = "";
